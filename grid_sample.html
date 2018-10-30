@@ -1,0 +1,413 @@
+<html>
+<head>
+	<style>
+.container{
+height:400px;
+width:400px;
+color:black;
+}
+.col-grid{
+background:black;
+height:50px;
+width:400px;
+bottom:0px;
+position:relative;
+}
+
+.grid1{
+height:50px;
+width:50px;
+background: white;
+position:relative;
+left:0px;
+bottom:0px;
+
+}
+
+	
+.grid2{
+height:50px;
+width:50px;
+background: blue;
+position:relative;
+left:50px;
+bottom:50px;
+}
+
+
+.grid3{
+height:50px;
+width:50px;
+background: yellow;
+position:relative;
+left:100px;
+bottom:100px;	
+}
+
+.grid4{
+height:50px;
+width:50px;
+background: red;
+position:relative;
+left:150px;
+bottom:150px;	
+}
+
+.grid5{
+height:50px;
+width:50px;
+background: green;
+position:relative;
+left:200px;
+bottom:200px;	
+}
+
+
+.grid6{
+height:50px;
+width:50px;
+background: orange;
+position:relative;
+left:250px;
+bottom:250px;	
+}		
+
+
+.grid7{
+height:50px;
+width:50px;
+background: brown;
+position:relative;
+left:300px;
+bottom:300px;	
+}
+
+
+.grid8{
+height:50px;
+width:50px;
+background: aqua;
+position:relative;
+left:350px;
+bottom:350px	
+}
+		
+#controller{
+height:50px;
+width:50px;
+position:relative;
+
+
+
+}
+
+#controller1{
+height:50px;
+width:50px;
+position:relative;
+background-size: cover;
+background-image:none;
+
+
+}
+		
+		
+#controller2{
+height:50px;
+width:50px;
+position:relative;
+background-size: cover;
+background-image:none;
+}
+		
+#controller3{
+height:50px;
+width:50px;
+position:relative;
+background-size: cover;
+background-image:none;
+
+}
+		
+#controller4{
+height:50px;
+width:50px;
+position:relative;
+background-size: cover;
+background-image:none;
+
+}
+		
+#controller5{
+height:50px;
+width:50px;
+position:relative;
+background-size: cover;
+background-image:none;
+
+}
+#controller6{
+height:50px;
+width:50px;
+position:relative;
+background-size: cover;
+background-image:none;
+
+}
+		
+#controller7{
+height:50px;
+width:50px;
+position:relative;
+background-size: cover;
+background-image:none;
+
+}
+		
+#controller8{
+height:50px;
+width:50px;
+position:relative;
+background-size: cover;
+background-image:none;
+
+}
+
+#fire1 {
+width: 5px;
+height: 15px;
+position: absolute;
+background-color: yellow;
+left:22px;
+bottom:50px;
+display:block;
+}
+		
+#fire2 {
+width: 5px;
+height: 15px;
+position: absolute;
+background-color: yellow;
+left:44px;
+bottom:50px;
+display:block;
+}
+#ball {
+width: 50px;
+height: 50px;
+position: relative;
+background-color: red;
+left:22px;
+bottom:50px;
+}		
+	</style>
+</head>
+<body onmousedown="fire()">
+	<!--GRID CONTAINER-->
+	<div class="container">
+		<div class="col-grid">
+			<div class="grid1">1a</div>
+			<div class="grid2">2</div>
+			<div class="grid3">3</div>
+			<div class="grid4">4</div>
+			<div class="grid5">5</div>
+			<div class="grid6">6</div>
+			<div class="grid7">7</div>
+			<div class="grid8">8</div>
+		</div>
+		<div class="col-grid">
+			<div class="grid1">1b</div>
+			<div class="grid2">2</div>
+			<div class="grid3">3</div>
+			<div class="grid4">4</div>
+			<div class="grid5">5</div>
+			<div class="grid6">6</div>
+			<div class="grid7">7</div>
+			<div class="grid8">8</div>
+		</div>
+		<div class="col-grid">
+			<div class="grid1">1c</div>
+			<div class="grid2">2</div>
+			<div class="grid3">3</div>
+			<div class="grid4">4</div>
+			<div class="grid5">5</div>
+			<div class="grid6">6</div>
+			<div class="grid7">7</div>
+			<div class="grid8">8</div>
+		</div>
+		<div class="col-grid">
+			<div class="grid1">1d</div>
+			<div class="grid2">2</div>
+			<div class="grid3">3</div>
+			<div class="grid4">4</div>
+			<div class="grid5">5</div>
+			<div class="grid6">6</div>
+			<div class="grid7">7</div>
+			<div class="grid8">8</div>
+		</div>
+		<div class="col-grid">
+			<div class="grid1">1e</div>
+			<div class="grid2">2</div>
+			<div class="grid3">3</div>
+			<div class="grid4">4</div>
+			<div class="grid5">5</div>
+			<div class="grid6">6</div>
+			<div class="grid7">7</div>
+			<div class="grid8">8</div>
+		</div>
+		<div class="col-grid">
+			<div class="grid1">1f</div>
+			<div class="grid2">2</div>
+			<div class="grid3">3</div>
+			<div class="grid4">4</div>
+			<div class="grid5">5</div>
+			<div class="grid6">6</div>
+			<div class="grid7">7</div>
+			<div class="grid8">8</div>
+		</div>
+		<div class="col-grid">
+			<div class="grid1">1g</div>
+			<div class="grid2">2</div>
+			<div class="grid3">3</div>
+			<div class="grid4">4</div>
+			<div class="grid5">5</div>
+			<div class="grid6">6</div>
+			<div class="grid7">7</div>
+			<div class="grid8">8</div>
+		</div>
+		<div class="col-grid" id='controller'>
+			<div class="grid1" id='controller1' onmouseover="character1(this)">1h<div id ="fire1"></div></div> 
+			<div class="grid2" id='controller2' onmouseover="character2(this)">2<div id ="fire2"></div></div>
+			<div class="grid3" id='controller3' onmouseover="character3(this)">3<div id ="fire1"></div></div>
+			<div class="grid4" id='controller4' onmouseover="character4(this)">4<div id ="fire1"></div></div>
+			<div class="grid5" id='controller5' onmouseover="character5(this)">5<div id ="fire1"></div></div>
+			<div class="grid6" id='controller6' onmouseover="character6(this)">6<div id ="fire1"></div></div>
+			<div class="grid7" id='controller7' onmouseover="character7(this)">7<div id ="fire1"></div></div>
+			<div class="grid8" id='controller8' onmouseover="character8(this)">8<div id ="fire1"></div></div>
+			
+			
+		</div>
+	
+	</div>
+
+</body>
+	
+<script>
+	
+	function fire() {
+			var fire	=	document.getElementById("fire1");
+			var pos		= 	60;
+			var id		=	setInterval(frame, 1);
+			function frame() {
+			if (pos == 350) {
+				clearInterval(id);
+				enemy.style.display = "none";
+				fire.style.display = "none";
+
+
+			} else {
+				fire.style.display = "block";
+				fire.style.bottom = pos + 'px'; 
+				fire.style.bottom = pos + 'px'; 
+				pos++; 
+
+
+
+				}
+			  }
+			}
+	
+	//MOUSEOVER
+	
+	
+	 function character1(x){
+		x.style.backgroundImage = "url('images/BALL.png')";
+		  
+		
+		document.getElementById("controller2").style.backgroundImage = "none";
+		document.getElementById("controller3").style.backgroundImage = "none";
+		document.getElementById("controller4").style.backgroundImage = "none";
+		document.getElementById("controller5").style.backgroundImage = "none";
+		document.getElementById("controller6").style.backgroundImage = "none";
+		document.getElementById("controller7").style.backgroundImage = "none";
+		document.getElementById("controller8").style.backgroundImage = "none";
+	 }
+	
+	function character2(x){
+		x.style.backgroundImage = "url('images/BALL.png')";
+		document.getElementById("controller1").style.backgroundImage = "none";
+		document.getElementById("controller3").style.backgroundImage = "none";
+		document.getElementById("controller4").style.backgroundImage = "none";
+		document.getElementById("controller5").style.backgroundImage = "none";
+		document.getElementById("controller6").style.backgroundImage = "none";
+		document.getElementById("controller7").style.backgroundImage = "none";
+		document.getElementById("controller8").style.backgroundImage = "none";
+	}
+	function character3(x){
+		x.style.backgroundImage = "url('images/BALL.png')";
+		document.getElementById("controller1").style.backgroundImage = "none";
+		document.getElementById("controller2").style.backgroundImage = "none";
+		document.getElementById("controller4").style.backgroundImage = "none";
+		document.getElementById("controller5").style.backgroundImage = "none";
+		document.getElementById("controller6").style.backgroundImage = "none";
+		document.getElementById("controller7").style.backgroundImage = "none";
+		document.getElementById("controller8").style.backgroundImage = "none";
+	}
+	
+	function character4(x){
+		x.style.backgroundImage = "url('images/BALL.png')";
+		document.getElementById("controller1").style.backgroundImage = "none";
+		document.getElementById("controller2").style.backgroundImage = "none";
+		document.getElementById("controller3").style.backgroundImage = "none";
+		document.getElementById("controller5").style.backgroundImage = "none";
+		document.getElementById("controller6").style.backgroundImage = "none";
+		document.getElementById("controller7").style.backgroundImage = "none";
+		document.getElementById("controller8").style.backgroundImage = "none";
+	}
+	
+	function character5(x){
+		x.style.backgroundImage = "url('images/BALL.png')";
+		document.getElementById("controller1").style.backgroundImage = "none";
+		document.getElementById("controller2").style.backgroundImage = "none";
+		document.getElementById("controller3").style.backgroundImage = "none";
+		document.getElementById("controller4").style.backgroundImage = "none";
+		document.getElementById("controller6").style.backgroundImage = "none";
+		document.getElementById("controller7").style.backgroundImage = "none";
+		document.getElementById("controller8").style.backgroundImage = "none";
+	}
+	
+	function character6(x){
+		x.style.backgroundImage = "url('images/BALL.png')";
+		document.getElementById("controller1").style.backgroundImage = "none";
+		document.getElementById("controller2").style.backgroundImage = "none";
+		document.getElementById("controller3").style.backgroundImage = "none";
+		document.getElementById("controller4").style.backgroundImage = "none";
+		document.getElementById("controller5").style.backgroundImage = "none";
+		document.getElementById("controller7").style.backgroundImage = "none";
+		document.getElementById("controller8").style.backgroundImage = "none";
+	}
+	
+	function character7(x){
+		x.style.backgroundImage = "url('images/BALL.png')";
+		document.getElementById("controller1").style.backgroundImage = "none";
+		document.getElementById("controller2").style.backgroundImage = "none";
+		document.getElementById("controller3").style.backgroundImage = "none";
+		document.getElementById("controller4").style.backgroundImage = "none";
+		document.getElementById("controller5").style.backgroundImage = "none";
+		document.getElementById("controller6").style.backgroundImage = "none";
+		document.getElementById("controller8").style.backgroundImage = "none";
+	}
+	
+	function character8(x){
+		x.style.backgroundImage = "url('images/BALL.png')";
+		document.getElementById("controller1").style.backgroundImage = "none";
+		document.getElementById("controller2").style.backgroundImage = "none";
+		document.getElementById("controller3").style.backgroundImage = "none";
+		document.getElementById("controller4").style.backgroundImage = "none";	
+		document.getElementById("controller5").style.backgroundImage = "none";
+		document.getElementById("controller6").style.backgroundImage = "none";
+		document.getElementById("controller7").style.backgroundImage = "none";
+	}
+	
+	</script>
+</html>

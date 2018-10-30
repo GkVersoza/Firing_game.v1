@@ -1,0 +1,68 @@
+<style>
+		<style>
+	
+		
+	
+		
+	#player {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: green;
+	bottom:1px;
+	right:0px;	
+	}
+		
+	#enemy1 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: yellow;
+	left:170px;
+	animation-delay: 1s;
+	}
+	
+	#enemy2 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: blue;
+	left:0px;
+	display:none;
+	
+	}
+		
+	#enemy3 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: white;
+	right:0px;
+	}
+		
+	#enemy4 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: aqua;
+	right:90px;
+	}
+	
+	#enemy5 {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: orange;
+	left:90px;
+	}
+		
+	#fire1 {
+	width: 5px;
+	height: 15px;
+	position: absolute;
+	background-color: yellow;
+	left:22px;
+	bottom:50px;
+	}
+
+	</style>

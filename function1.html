@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#fire1 {
+width: 50px;
+height: 50px;
+position: absolute;
+background-color: red;
+left:170px;
+bottom:60px;
+ cursor:pointer;
+}
+</style>
+<body>
+
+
+<div id ="container">
+<div id ="fire1"></div>
+</div>
+
+<script>
+function fire() {
+  var elem = document.getElementById("fire1");   
+  var pos = 60;
+  var id = setInterval(frame, 1);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      
+      elem.style.left = pos + 'px'; 
+      elem.style.left = pos + 'px'; 
+		pos++; 
+		
+    }
+  }
+}
+</script>
+<p>
+<button onclick="fire()">Click Me</button>
+</p> 
+
+</body>
+</html>

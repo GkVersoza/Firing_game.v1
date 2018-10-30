@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<center>
+<h1>GAME DEVELOPED BY GK</h1>
+<head>
+<link rel="stylesheet" type="text/css" href="custom.css">
+<script type="text/javascript" src="function.js"></script>
+<style>
+	.container1 {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	background-image:url("./images/source.gif");
+		background-repeat:round;
+		background-size:cover; 
+	}
+		
+	#player {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background-color: green;
+	bottom:1px;
+	right:0px;	
+	}
+	</style>
+</head>
+
+	
+<body>
+	<div class ="container1">
+		<div id ="player">
+			<div id ="fire1"></div>
+		</div>		
+		
+		<div id	="enemy1"></div>
+		<div id	="enemy2"></div>
+		<div id	="enemy3"></div>
+		<div id	="enemy4"></div>
+		<div id	="enemy5"></div>
+	</div>
+
+	<div class="container2">
+		<p>
+			<button onclick="left()">Left</button>
+			<button onclick="right()">Right</button>
+			<button onclick="fire()">Fire</button>
+		</p> 
+	</div>
+
+<script src="./function.js" type="text/javascript"></script>
+</body>	</center>
+</html>
